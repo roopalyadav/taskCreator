@@ -25,6 +25,8 @@
     "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
+    "antd": "^5.26.7",
+    "dayjs": "^1.11.13",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   }

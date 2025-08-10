@@ -1,0 +1,214 @@
+.milestone-section {
+  position: relative;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  bottom: -100px;
+  /* margin: 20px 0 15px 0; */
+  transition: all 0.3s ease;
+}
+
+.milestone-collapsed {
+  padding: 6px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.milestone-collapsed:hover {
+  background-color: #e9ecef;
+}
+
+.milestone-collapsed span:first-child {
+  font-size: 14px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.milestone-data {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+}
+
+.milestone-title {
+  font-size: 14px;
+  color: #495057;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.milestone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.milestone-date-picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.milestone-date-input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.milestone-date-icon {
+  font-size: 16px;
+  color: #495057;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.milestone-date-icon:hover {
+  background-color: #f0f0f0;
+  color: #495057;
+}
+
+.milestone-selected-date {
+  font-size: 12px;
+  color: #495057;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.milestone-selected-date:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.milestone-description {
+  font-size: 12px;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+.milestone-icon {
+  font-size: 14px;
+  color: #8c8c8c;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.milestone-collapsed:hover .milestone-icon {
+  background-color: #dee2e6;
+}
+
+.milestone-expanded {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.milestone-heading {
+  font-size: 16px;
+  color: #495057;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.milestone-separator {
+  width: 100%;
+  height: 1px;
+  background-color: #dee2e6;
+  margin-bottom: 20px;
+}
+
+.milestone-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.milestone-action-button {
+  border: none;
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.milestone-cancel-button {
+  background-color: #ffffff;
+  color: #6c757d;
+  border: 1px solid #dee2e6;
+}
+
+.milestone-cancel-button:hover {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.milestone-create-button {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.milestone-create-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.milestone-create-button.disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.milestone-create-button.disabled:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  transform: none;
+}
+
+.milestone-input-with-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* margin-bottom: 15px; */
+}
+
+.milestone-input-with-date .invisible-input {
+  flex: 1;
+}
+
+.milestone-input-with-date .milestone-date-picker {
+  margin-left: 0;
+}
